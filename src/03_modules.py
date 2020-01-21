@@ -10,24 +10,21 @@ import sys
 
 # Print out the command line arguments in sys.argv, one per line:
 # YOUR CODE HERE
+for a in sys.argv:
+    print(a)
+# print(sys.argv) ---prints on one line
+# print(*sys.argv, sep="/n")
 
-print ("This is the name of the script: "), sys.argv[0]
-print ("Number of arguments: "), len(sys.argv)
-print ("The arguments are: " ), str(sys.argv)
+
 # Print out the OS platform you're using:
-import platform
-print(platform.system())
-#print(platform.release())
-#print(platform.version())
+print(sys.platform)
+
 
 # YOUR CODE HERE
 
 # Print out the version of Python you're using:
-print(sys.version)
-
-
 # YOUR CODE HERE
-
+print(sys.version)
 
 import os
 # See the docs for the OS module: https://docs.python.org/3.7/library/os.html
