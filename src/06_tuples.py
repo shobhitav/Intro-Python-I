@@ -37,8 +37,16 @@ print("Distance is: {:.2f}".format(dist(a, b)))
 # YOUR CODE HERE
 
 t = (1, 2, 5, 7, 99)
-print_tuple(t)  # Prints 1 2 5 7 99, one per line
+# print_tuple(t)  # Prints 1 2 5 7 99, one per line
+def print_tuple(t):
+    for ele in t:
+        print(ele)
+print_tuple(t)        
 
 # Declare a tuple of 1 element then print it
-u = (1)  # What needs to be added to make this work?
+u = (1,)  # What needs to be added to make this work?
+"""
+https://note.nkmk.me/en/python-tuple-single-empty/
+without comma , it thinks its an integer as parens in tuples are optional
+"""
 print_tuple(u)
